@@ -13,13 +13,14 @@ import Jumbotron from './components/sections/Jumbotron.vue';
 import Main from './components/macro/Main.vue';
 import Footer from './components/macro/Footer.vue';
 
+
 export default {
   name: 'App',
   components: {
     Header,
     Jumbotron,
     Main,
-    Footer
+    Footer,
   }
 }
 </script>

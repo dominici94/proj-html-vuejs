@@ -6,7 +6,7 @@
                   today's pick
               </div>
               <a href="#">Food Corner: Top Japanese Restaurants for Sushi</a>
-              <h2>March 25, 2019</h2>
+              <span>March 25, 2019</span>
           </div>
       </div>
   </section>
@@ -43,9 +43,10 @@ export default {
                 color: inherit;
             }
 
-            h2{
+            span{
                 font-size: 20px;
                 padding: 20px 0 0;
+                display: block;
             }
             
 
