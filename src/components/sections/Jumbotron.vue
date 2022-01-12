@@ -22,7 +22,7 @@ export default {
 @import '../../assets/style/partials/variables.scss';
 
 .jumbotron{
-    height: 70vh;
+    height: 700px;
     background-image: url(../../assets/img/single-post-img3.jpg);
     background-position: center;
     background-size: cover;
