@@ -111,10 +111,18 @@
 
                 </div>
 
+                <button>Load more posts</button>
+
             </div>
 
             <div class="col right">
 
+
+                <!-- <a href="#">
+                    <img class="menu" src="../../assets/img/ad-bg.jpg" alt="menu">
+                    <div id="latest">view our latest recipes</div>
+                </a> -->
+                
             </div>
 
         </div>
@@ -122,17 +130,22 @@
   </section>
 </template>
 
+
+
 <script>
 export default {
     name: 'Blog'
 }
 </script>
 
+
+
 <style lang="scss" scoped>
 @import '../../assets/style/partials/variables.scss';
 
 .blog{
     background-color: $mainBgColor;
+    padding-bottom: 100px;
     &__text{
         padding: 80px 0;
 
@@ -171,7 +184,7 @@ export default {
         justify-content: space-between;
 
         .left{
-            width: 60%;
+            width: 63%;
 
             .meal-card{
                 width: 100%;
@@ -255,10 +268,36 @@ export default {
                     }
                 }
             }
+
+            button{
+                width: 100%;
+                text-transform: uppercase;
+                border: none;
+                background-color: $secondBtnColor;
+                color: $secondTextColor;
+                font-size: 25px;
+                padding: 10px;
+                cursor: pointer;
+            }
         }
 
         .right{
-            width: 35%;
+            width: 30%;
+            
+            // a{
+            //     position: relative;
+            // }
+
+            // .menu{
+            //     width: 100%;
+            // }
+
+            // #latest{
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            // }
+
         }
     }
     
