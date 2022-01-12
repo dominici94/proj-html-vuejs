@@ -117,12 +117,32 @@
 
             <div class="col right">
 
+                <div class="latest-recipes">
+                    <a href="#">
+                        <img src="../../assets/img/ad-bg.jpg" alt="">
+                        <span>view our latest recipes</span>
+                    </a>
+                </div>
 
-                <!-- <a href="#">
-                    <img class="menu" src="../../assets/img/ad-bg.jpg" alt="menu">
-                    <div id="latest">view our latest recipes</div>
-                </a> -->
+                <div class="city-guide">
+                    <a href="#">
+                        <img src="../../assets/img/singapore-featured-image.jpg" alt="singapore">
+                        <div class="city">City Guide: Singapore</div>
+                    </a>
+                    <a href="#" class="all-city">view all city guide</a>
+                </div>
+
+                <input type="text" placeholder="search...">
+
+                <h4>Follow us</h4>
                 
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
             </div>
 
         </div>
@@ -284,19 +304,98 @@ export default {
         .right{
             width: 30%;
             
-            // a{
-            //     position: relative;
-            // }
+            .latest-recipes{
+                position: relative;
 
-            // .menu{
-            //     width: 100%;
-            // }
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
 
-            // #latest{
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            // }
+                img{
+                    width: 100%;
+                }
+
+                span{
+                    color: $textColor;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-transform: uppercase;
+                    text-align: center;
+                    width: 40%;
+                    font-size: 25px;
+                    line-height: 40px;
+                }
+            }
+
+            .city-guide{
+                position: relative;
+                padding: 50px 0;
+                border-bottom: 1px solid $secondBtnColor;
+
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                img{
+                    width: 100%;
+                }
+
+                .city{
+                    font-size: 28px;
+                    padding: 10px;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    color: white;
+                    background-color: rgba(0,0,0,0.8);
+                }
+
+                .all-city{
+                    background-color: $btnColor;
+                    padding: 10px;
+                    color: white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+
+            input{
+                margin-top: 50px;
+                width: 100%;
+                padding: 10px;
+                border: 1px solid $secondBtnColor;
+                color: $contactColor;
+                border-radius: 5px;
+            }
+
+            h4{
+                color: $btnColor;
+                padding: 30px 0;
+            }
+
+            ul{
+                list-style: none;
+                display: flex;
+                
+                li{
+                    margin-right: 10px;
+                    border: 1px solid $contactColor;
+                    padding: 5px;
+                    border-radius: 5px;
+                    background-color: $secondBtnColor;
+
+                    a{
+                        color: $contactColor;
+                    }
+                }
+            }
 
         }
     }
