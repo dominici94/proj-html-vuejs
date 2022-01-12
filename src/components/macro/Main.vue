@@ -3,6 +3,7 @@
       <FoodieJournal/>
       <PopularRecipes/>
       <CulinaryCollection/>
+      <Blog/>
   </main>
 </template>
 
@@ -10,13 +11,15 @@
 import FoodieJournal from '../sections/FoodieJournal.vue';
 import PopularRecipes from '../sections/PopularRecipes.vue';
 import CulinaryCollection from '../sections/CulinaryCollection.vue';
+import Blog from '../sections/Blog.vue';
 
 export default {
     name: 'Main',
     components: {
       FoodieJournal,
       PopularRecipes,
-      CulinaryCollection
+      CulinaryCollection,
+      Blog
     }
 }
 </script>
