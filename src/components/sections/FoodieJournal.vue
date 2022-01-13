@@ -14,7 +14,17 @@
 
                 <!-- meal card riutilizzabile -->
                 <div class="meal-card">
-                    <a href="#"><img src="../../assets/img/single-post-img3.jpg" alt="sushi"></a>
+
+                    <div class="meal-img">
+                        <a href="#"><img src="../../assets/img/single-post-img3.jpg" alt="sushi"></a>
+                        <div class="hover-meal">
+                            <div class="icon">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            Food Corner: Top Japanese Restaurants for Sushi
+                        </div>
+                    </div>
+                    
                     <div class="text-card">
                         <div class="title">
                             Food Corner: Top Japanese Restaurants for Sushi
@@ -26,7 +36,17 @@
                 </div>
 
                 <div class="meal-card">
-                    <a href="#"><img src="../../assets/img/fi-roundup.jpg" alt="sushi"></a>
+
+                    <div class="meal-img">
+                        <a href="#"><img src="../../assets/img/fi-roundup.jpg" alt="roundup"></a>
+                        <div class="hover-meal">
+                            <div class="icon">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            Roundup: My New Favourite Recipes For Healthy Living
+                        </div>
+                    </div>
+                    
                     <div class="text-card">
                         <div class="title">
                             Roundup: My New Favourite Recipes For Healthy Living
@@ -38,7 +58,17 @@
                 </div>
 
                 <div class="meal-card">
-                    <a href="#"><img src="../../assets/img/fi-toasts.jpg" alt="sushi"></a>
+
+                    <div class="meal-img">
+                        <a href="#"><img src="../../assets/img/fi-toasts.jpg" alt="toasts"></a>
+                        <div class="hover-meal">
+                            <div class="icon">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            Why These Toasts with Tea are My New Favourite
+                        </div>
+                    </div>
+                    
                     <div class="text-card">
                         <div class="title">
                             Why These Toasts with Tea are My New Favourite
@@ -104,11 +134,48 @@ export default {
             .meal-card{
                 width: calc(100% / 3 - 50px);
                 margin: 0 25px;
-            
-                img{
+
+                .meal-img{
                     width: 100%;
+                    position: relative;
+
+                    a{
+                        display: grid;
+                    }
+
+                    img{
+                        width: 100%;
+                    }
+
+                    .hover-meal{
+                        display: none;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: linear-gradient(to bottom, rgba(133, 67, 15, 0.5) 0%,$btnColor 100%);
+                        overflow: auto;
+                        padding: 30px;
+                        color: white;
+
+                        .icon{
+                            padding: 10px;
+                            border-radius: 50%;
+                            background-color: white;
+                            color: rgba($color: #000000, $alpha: 0.5);
+
+                        }
+                    }
                 }
 
+                .meal-img:hover .hover-meal{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
                 .text-card{
                     font-family: 'Orelega One', cursive;
                     margin: 0 auto;

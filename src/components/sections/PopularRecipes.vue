@@ -15,7 +15,18 @@
         <div class="popular__meals">
 
             <div class="popular__meals__col left">
-                <img src="../../assets/img/Yogurt-Nan.jpg" alt="yogurt">
+
+                <div class="meal-img">
+                        <a href="#"><img src="../../assets/img/Yogurt-Nan.jpg" alt="yogurt"></a>
+                        <div class="hover-meal">
+                            <div class="icon">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            Lunch Favourite with Salad, Naan And Beans
+                        </div>
+                </div>
+
+
 
                 <div class="popular__meals__col__text">
                     <div class="title">
@@ -101,8 +112,45 @@ export default {
 
         &__col{
             width: 48%;
-            img{
-                width: 100%;
+
+            .meal-img{
+                    width: 100%;
+                    position: relative;
+
+                    a{
+                        display: grid;
+                    }
+
+                    img{
+                        width: 100%;
+                    }
+
+                    .hover-meal{
+                        display: none;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: linear-gradient(to bottom, rgba(133, 67, 15, 0.5) 0%,$btnColor 100%);
+                        overflow: auto;
+                        padding: 30px;
+                        color: white;
+
+                        .icon{
+                            padding: 10px;
+                            border-radius: 50%;
+                            background-color: white;
+                            color: rgba($color: #000000, $alpha: 0.5);
+                        }
+                    }
+            }
+            
+            .meal-img:hover .hover-meal{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
 
             &__text{

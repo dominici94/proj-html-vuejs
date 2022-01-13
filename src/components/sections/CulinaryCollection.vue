@@ -130,6 +130,17 @@ export default {
                 color: inherit;
                 
             }
+
+            .text{
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+            .text:hover{
+                background-color: $btnColor;
+                color: white;
+            }
         }
     }
 }
