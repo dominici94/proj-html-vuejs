@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header :info="navbar"/>
     <Jumbotron/>
     <Main/>
-    <Footer/>
+    <Footer :info="navbar"/>
   </div>
 </template>
 
@@ -21,7 +21,19 @@ export default {
     Jumbotron,
     Main,
     Footer,
-  }
+  },
+  data() {
+    return {
+      navbar: [
+        'Recipes',
+        'Places',
+        'Blog',
+        'About',
+        'Contact'
+      ]
+    }  
+  },
+  
 }
 </script>
 

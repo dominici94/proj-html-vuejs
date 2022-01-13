@@ -15,11 +15,7 @@
 
           <div class="col list">
             <ul>
-              <li><a href="#">Recipes</a></li>
-              <li><a href="#">Places</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li v-for="(item, index) in info" :key="index"><a href="#">{{item}}</a></li>
             </ul>
           </div>
 
@@ -48,7 +44,10 @@
 
 <script>
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    props: {
+      info: Array
+    }
 }
 </script>
 
@@ -131,9 +130,6 @@ export default {
   .download{
     border: none;
 
-    img{
-      padding: 10px 0;
-    }
   }
 }
 

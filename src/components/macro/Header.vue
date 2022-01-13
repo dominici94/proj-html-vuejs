@@ -26,11 +26,7 @@
           <nav>
             <ul>
               <li><a href="#" class="active">Home</a></li>
-              <li><a href="#">Recipes</a></li>
-              <li><a href="#">Places</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li v-for="(item, index) in info" :key="index"><a href="#">{{item}}</a></li>
               <li><a href="#"><i class="fas fa-search"></i></a></li>
             </ul>
           </nav>
@@ -49,7 +45,10 @@
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
+    props: {
+        info: Array,
+    }
 }
 </script>
 
