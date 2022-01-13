@@ -39,7 +39,10 @@
         </div>
       </div>
 
-      <div class="bottom-footer"></div>
+      <div class="bottom-footer">
+        <div class="rights"><i class="far fa-copyright"></i>Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Right Reserved | Powered by WordPress</div>
+        <a href="#"><i class="fas fa-chevron-up"></i></a>
+      </div>
   </footer>
 </template>
 
@@ -131,6 +134,29 @@ export default {
     img{
       padding: 10px 0;
     }
+  }
+}
+
+.bottom-footer{
+  position: relative;
+  background-color: $mainBgColor;
+  border-top: 2px solid $secondBtnColor;
+  text-align: center;
+  padding: 20px;
+  
+  .rights{
+    color: $contactColor;
+    font-size: 12px;
+  }
+
+  a{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: 10px 12px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: $secondTextColor;
   }
 }
 
