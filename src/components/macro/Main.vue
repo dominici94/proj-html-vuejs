@@ -5,6 +5,7 @@
       <CulinaryCollection/>
       <Blog/>
       <Subscribe/>
+      <MealList/>
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import PopularRecipes from '../sections/PopularRecipes.vue';
 import CulinaryCollection from '../sections/CulinaryCollection.vue';
 import Blog from '../sections/Blog.vue';
 import Subscribe from '../sections/Subscribe.vue';
+import MealList from '../sections/MealsList.vue';
 
 export default {
     name: 'Main',
@@ -22,7 +24,8 @@ export default {
       PopularRecipes,
       CulinaryCollection,
       Blog,
-      Subscribe
+      Subscribe,
+      MealList
     }
 }
 </script>
