@@ -117,6 +117,7 @@ nav{
 
 .fixed-section{
   position: fixed;
+  z-index: 999;
   top: 150px;
   right: 20px;
 
